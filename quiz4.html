@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .introduction {
+        display: flex;
+        align-items: flex-end; 
+        gap: 10px; 
+        }
+        .introduction-box {
+        width: 160px;  
+        height: 60px;   
+        padding: 8px;   
+        font-size: 14px; 
+        vertical-align: top; 
+        }
+        .introduction-label {
+        margin-bottom: 8px; 
+        }
+        .custom-input {
+        width: 180px; 
+        height: 15px; 
+        padding: 0 10px; 
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="name">사용자 ID:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="password">비밀 번호:</label>
+        <input type="password" id="password" name="password">  
+        <button type="button" onclick="return false;">완료</button> 
+        <br><br>
+        <select id="selectcf" name="selectcf">
+            <option value="option1">짜장면</option>
+            <option value="option2" selected>짬뽕</option>
+            <option value="option3">탕수육</option>
+        </select><br>
+        <label for="selectcf">짜장면</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">
+        <label for="selectcf">짬뽕</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" checked>
+        <label for="selectcf">탕수육</label>
+        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3">
+        <br>
+        <label>이름 :</label>
+        <input type="text" name="name" class="custom-input"><br>
+        <label>암호 :</label>
+        <input type="password" name="password" class="custom-input">
+        <div class="introduction">
+            <label for="introduction" class="introduction-label">자소서 :</label>
+            <textarea id="introduction" name="introduction" class="introduction-box" placeholder="이곳에 자기소개서 작성"></textarea>
+        </div>
+        <br>
+        <label for="selectcf">검색:</label>
+        <input type="text" id="search" name="search">
+        <button type="button" onclick="return false;">Q1</button>
+        <button type="button" onclick="return false;">Q2</button>
+        <br>
+        <label for="selectcf">submit 버튼:</label>
+        <button type="submit">전송1</button>
+        <button type="submit">전송2</button>
+        <br>
+        <label for="selectcf">reset 버튼:</label>
+        <button type="reset">리셋1</button>
+        <button type="reset">리셋2</button>
+
+
+    </form>
+</body>
+</html>
